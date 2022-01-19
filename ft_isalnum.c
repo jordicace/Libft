@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcanigue <jcanigue@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 12:03:14 by jcanigue          #+#    #+#             */
-/*   Updated: 2022/01/19 12:17:39 by jcanigue         ###   ########.fr       */
+/*   Created: 2022/01/10 16:32:21 by jcanigue          #+#    #+#             */
+/*   Updated: 2022/01/10 16:55:41 by jcanigue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
-
-#include <stdlib.h>
-#include <stdio.h>
-
-typedef struct	s_list
-{
-	void	*content;
-	struct s_list	*next;	
-}	t_list;
-
-size_t	ft_strlen(const char *str);
-
-
-
-#endif
+int ft_isalnum(char c)
+	{
+		if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
+				|| (c >= '0' && c <= '9'))
+			return(1);
+		return(0);
+	}

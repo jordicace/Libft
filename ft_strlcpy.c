@@ -1,29 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcanigue <jcanigue@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 12:03:14 by jcanigue          #+#    #+#             */
-/*   Updated: 2022/01/19 12:17:39 by jcanigue         ###   ########.fr       */
+/*   Created: 2022/01/10 13:11:27 by jcanigue          #+#    #+#             */
+/*   Updated: 2022/01/10 13:15:07 by jcanigue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
-
-#include <stdlib.h>
-#include <stdio.h>
-
-typedef struct	s_list
-{
-	void	*content;
-	struct s_list	*next;	
-}	t_list;
-
-size_t	ft_strlen(const char *str);
 
 
 
-#endif
